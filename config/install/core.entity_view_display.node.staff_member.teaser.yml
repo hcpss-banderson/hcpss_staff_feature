@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.staff_member.body
+    - field.field.node.staff_member.field_email
+    - field.field.node.staff_member.field_job_title
+    - field.field.node.staff_member.field_photo
+    - field.field.node.staff_member.field_telephone
+    - node.type.staff_member
+  module:
+    - telephone
+    - user
+id: node.staff_member.teaser
+targetEntityType: node
+bundle: staff_member
+mode: teaser
+content:
+  field_email:
+    type: basic_string
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_job_title:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_telephone:
+    type: telephone_link
+    weight: 2
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+  links:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_photo: true

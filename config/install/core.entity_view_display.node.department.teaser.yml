@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.department.field_staff
+    - field.field.node.department.field_website
+    - node.type.department
+  module:
+    - user
+id: node.department.teaser
+targetEntityType: node
+bundle: department
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_staff: true
+  field_website: true

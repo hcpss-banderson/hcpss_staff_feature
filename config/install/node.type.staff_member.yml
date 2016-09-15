@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Staff Member'
+type: staff_member
+description: 'Use <em>school staff member</em> to add a staff member to a department.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

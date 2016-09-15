@@ -1,0 +1,4 @@
+bundle: hcpss
+excluded:
+  - views.view.important_news_upcoming_events
+required: true

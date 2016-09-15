@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Department
+type: department
+description: 'Use <em>department</em> to organize your staff by departments, teams and groups.  For example, Administration, Building Service, Math, Grade 1, etc.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
